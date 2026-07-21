@@ -14,7 +14,7 @@ export default function TagForm() {
 
   return (
     <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-xl shadow-slate-100 border border-slate-200/80 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-slate-200/50">
-      <div className="bg-gradient-to-r from-slate-900 to-indigo-950 p-6 text-white">
+      <div className="bg-linear-to-r from-slate-900 to-indigo-950 p-6 text-white">
         <h2 className="text-xl font-semibold tracking-tight">RFID Tag Registrierung</h2>
         <p className="text-sm text-slate-400 mt-1">Geben Sie die Hardware-Spezifikationen ein, um den Diversifizierungsprozess im KMS zu starten.</p>
       </div>
