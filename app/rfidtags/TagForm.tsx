@@ -3,7 +3,8 @@
 
 import { useActionState } from 'react';
 import { registerRfidTag } from './rfidactions';
-import { Cpu, Layers, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+//import { Cpu, Layers, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+import { Cpu } from 'lucide-react';
 
 export default function TagForm() {
   // state enthält den Rückgabewert der Server Action, formAction wird an das Formular übergeben
