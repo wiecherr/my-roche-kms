@@ -1,14 +1,16 @@
 import Link from 'next/link'
 
-//djskjdks
+
+interface Posts {
+  id: number;
+  title: string;
+}
 
 export default async function PostsPage() {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-    const posts = await response.json();
-     
+    const posts :Posts[] = await response.json();
 
     return (
-        
         <div className="space-y-8">
             <section className="space-y-8">
                 <h1 className="text-center text-4xl font-semibold text-zinc-950 sm:text-5xl">

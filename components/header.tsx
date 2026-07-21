@@ -12,6 +12,9 @@ export default function Header() {
               <Link href="/" className="hover:text-zinc-950">
                 Home
               </Link>
+              <Link href="/masterkeys" className="hover:text-zinc-950">
+                HSM Master Keys
+              </Link>
               <Link href="/tagitems" className="hover:text-zinc-950">
                 RFID Tag items
               </Link>

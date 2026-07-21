@@ -3,13 +3,20 @@
 
 import Link from 'next/link'
 
+// TypeScript Interface für Typ-Sicherheit (optional, aber empfohlen)
+interface TagItem {
+  id: string;
+  masterkey: string;
+  uid: string;
+  batchid: string;
+  rfidtagkey: string;
+}
+
 export default async function RFIDKeyTagsPage() {
     const response = await fetch('http://localhost:3010/tagitems');
-    const tagitems = await response.json();
-     
+    const tagitems: TagItem[] = await response.json();
 
     return (
-        
         <div className="space-y-8">
             <section className="space-y-8">
                 <h1 className="text-center text-4xl font-semibold text-zinc-950 sm:text-5xl">
